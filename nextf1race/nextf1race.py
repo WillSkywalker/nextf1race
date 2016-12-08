@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -_- coding: utf-8 -_-
 
+import os.path
 import sys
 import json
 import datetime
@@ -10,13 +11,14 @@ NOW = datetime.datetime.utcnow()
 TIMELAG = datetime.datetime.now() - NOW
 # UTCNOW = datetime.datetime.utcnow()
 MONTHS = ('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec')
+DATAPATH = os.path.abspath(os.path.join(os.path.realpath(__file__), '../../data/'))
 
 
 class NextF1Race(object):
 
-    def __init__(self, calendar_file='../data/%d.json' % NOW.year, 
-                 next_year_calendar_file = '../data/%d.json' % (NOW.year + 1), 
-                 circuit_file='../data/circuits.json'):
+    def __init__(self, calendar_file=DATAPATH+'/%d.json' % NOW.year, 
+                 next_year_calendar_file = DATAPATH+'/%d.json' % (NOW.year + 1), 
+                 circuit_file=DATAPATH+'/circuits.json'):
         super(NextF1Race, self).__init__()
         with open(calendar_file) as fnow,\
              open(next_year_calendar_file) as fnext,\
@@ -74,8 +76,12 @@ def print_time(times, lag=TIMELAG, is_monaco=False):
     for i in times:
         t = datetime.datetime.strptime(times[i], '%H:%M') + lag
         times[i] = datetime.datetime.strftime(t, '%H:%M')
-    print("Practice 1: " + times['Practice 1'] + ' Friday')
-    print("Practice 2: " + times['Practice 2'] + ' Friday')
+    if is_monaco:
+        print("Practice 1: " + times['Practice 1'] + ' Thursday')
+        print("Practice 2: " + times['Practice 2'] + ' Thursday')
+    else:
+        print("Practice 1: " + times['Practice 1'] + ' Friday')
+        print("Practice 2: " + times['Practice 2'] + ' Friday')
     print("Practice 3: " + times['Practice 3'] + ' Saturday')
     print("Qualifying: " + times['Qualifying'] + ' Saturday')
     print("      Race: " + times['Race'] + ' Sunday')
@@ -92,7 +98,7 @@ def main():
     timestr = format_timedelta(next_race['gap'])
 
 
-    print('Next race: %s Grand Prix on %s %2d' % (next_race['country'], 
+    print('Next race: %s Grand Prix, on %s %2d' % (next_race['country'], 
         MONTHS[next_race['date'][0]-1], next_race['date'][1]))
     print(timestr)
 
@@ -111,8 +117,6 @@ def main():
         print('Race Distance: %s' % c['Race Distance'])
         print('Lap Record: %s' % c['Lap Record'])
         print('Number of Laps: %s' % c['Number of Laps'])
-        # for key in next_race['circuit']:
-        #     print(key, next_race['circuit'][key])
 
 
 
