@@ -12,7 +12,7 @@
             "Race": "13:00"
         },
         "Number of Laps": "52",
-        "description": "Like so many of England's racing circuits, Silverstone started life as an aerodrome. When the Second World War ended in 1945, England's other two circuits, Donington Park and the legendary Brooklands, had fallen into disrepair. And so it was that the outer taxiways and interconnecting runways of Silverstone became adopted by the Royal Automobile Club as the home for the British Grand Prix in 1948. The circuit was fast and challenging and in 1949 the shape was formed that remains the basis of the track to this day.Â"
+        "description": "Like so many of England's racing circuits, Silverstone started life as an aerodrome. When the Second World War ended in 1945, England's other two circuits, Donington Park and the legendary Brooklands, had fallen into disrepair. And so it was that the outer taxiways and interconnecting runways of Silverstone became adopted by the Royal Automobile Club as the home for the British Grand Prix in 1948. The circuit was fast and challenging and in 1949 the shape was formed that remains the basis of the track to this day."
     },
     "Spielberg": {
         "Lap Record": "1:08.337 by Michael Schumacher (2003)",
@@ -132,7 +132,7 @@
             "Race": "12:00"
         },
         "Number of Laps": "53",
-        "description": "The Sochi circuit, located in the Black Sea resort of the same name, is the first purpose-built Formula One facility in Russia and hosted the country's inaugural Grand Prix in October 2014, in the same year that the city also stages the Winter Olympics.Â"
+        "description": "The Sochi circuit, located in the Black Sea resort of the same name, is the first purpose-built Formula One facility in Russia and hosted the country's inaugural Grand Prix in October 2014, in the same year that the city also stages the Winter Olympics."
     },
     "Catalunya": {
         "Lap Record": "1:21.670 by Kimi Räikkönen (2008)",
@@ -147,7 +147,7 @@
             "Race": "13:00"
         },
         "Number of Laps": "66",
-        "description": "The Formula One teams are no strangers to the Circuit de Barcelona-Catalunya (formerly known as the Circuit de Catalunya); not only have they raced there every year since 1991, they also conduct extensive testing at the venue.Â"
+        "description": "The Formula One teams are no strangers to the Circuit de Barcelona-Catalunya (formerly known as the Circuit de Catalunya); not only have they raced there every year since 1991, they also conduct extensive testing at the venue."
     },
     "Melbourne": {
         "Lap Record": "1:24.125 by Michael Schumacher (2004)",
@@ -155,14 +155,14 @@
         "First Grand Prix": "1996",
         "Race Distance": "307.574KM",
         "time": {
-            "Practice 1": "02:30",
-            "Qualifying": "07:00",
-            "Practice 3": "04:00",
-            "Practice 2": "06:30",
-            "Race": "06:00"
+            "Practice 1": "01:30",
+            "Qualifying": "06:00",
+            "Practice 3": "03:00",
+            "Practice 2": "05:30",
+            "Race": "05:00"
         },
         "Number of Laps": "58",
-        "description": "When Formula One came to Australia in 1985 it set up home in Adelaide. However, ex-racer-turned-entrepreneur Bob Jane wanted a race in Melbourne. He created a huge 'thunderdome' and invented the AUSCAR series, bringing NASCAR action to Australia.\n\nThe desire to have a race in Melbourne did not wane. Despite the popular end of season slot for the Adelaide race, pressure was growing from the Melbourne motor sport community, and in 1992 Jeff Kennett was elected the new premier of the State of Victoria. He immediately set about improving Melbourne's profile. First on his list was the Australian Grand Prix.Â"
+        "description": "When Formula One came to Australia in 1985 it set up home in Adelaide. However, ex-racer-turned-entrepreneur Bob Jane wanted a race in Melbourne. He created a huge 'thunderdome' and invented the AUSCAR series, bringing NASCAR action to Australia.\n\nThe desire to have a race in Melbourne did not wane. Despite the popular end of season slot for the Adelaide race, pressure was growing from the Melbourne motor sport community, and in 1992 Jeff Kennett was elected the new premier of the State of Victoria. He immediately set about improving Melbourne's profile. First on his list was the Australian Grand Prix."
     },
     "Hockenheim": {
         "Lap Record": "1:13.780 by Kimi Räikkönen (2004)",

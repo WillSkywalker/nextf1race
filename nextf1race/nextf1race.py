@@ -7,8 +7,9 @@ import datetime
 import argparse
 
 NOW = datetime.datetime.utcnow()
+TIMELAG = datetime.datetime.now() - NOW
 # UTCNOW = datetime.datetime.utcnow()
-
+MONTHS = ('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec')
 
 
 class NextF1Race(object):
@@ -39,8 +40,10 @@ class NextF1Race(object):
                 break
         else:
             next = self.calendar[-1]
-        next['gap'] = datetime.datetime(NOW.year+1, 
-            race['date'][0], race['date'][1]) - NOW
+            circuit = self.circuits[next['circuit']]
+            race_time = list(map(int, circuit['time']['Race'].split(':')))
+        next['gap'] = datetime.datetime(NOW.year+1, race['date'][0], 
+            race['date'][1], race_time[0], race_time[1]) - NOW
         next['circuit'] = self.circuits[next['circuit']]
         return next
 
@@ -67,6 +70,17 @@ def format_timedelta(timedelta):
     return timestr.strip()
 
 
+def print_time(times, lag=TIMELAG, is_monaco=False):
+    for i in times:
+        t = datetime.datetime.strptime(times[i], '%H:%M') + lag
+        times[i] = datetime.datetime.strftime(t, '%H:%M')
+    print("Practice 1: " + times['Practice 1'] + ' Friday')
+    print("Practice 2: " + times['Practice 2'] + ' Friday')
+    print("Practice 3: " + times['Practice 3'] + ' Saturday')
+    print("Qualifying: " + times['Qualifying'] + ' Saturday')
+    print("      Race: " + times['Race'] + ' Sunday')
+
+
 def main():
     parser = argparse.ArgumentParser(description='What\'s the next Formula 1 race?')
     parser.add_argument('-d', '--detailed', action='store_true')
@@ -78,15 +92,27 @@ def main():
     timestr = format_timedelta(next_race['gap'])
 
 
-    print('Next race: %s Grand Prix' % next_race['country'])
+    print('Next race: %s Grand Prix on %s %2d' % (next_race['country'], 
+        MONTHS[next_race['date'][0]-1], next_race['date'][1]))
     print(timestr)
 
     if not args['simplified']:
-        print(next_race['circuit']['time'])
+        print('')
+        print_time(next_race['circuit']['time'])
 
 
     if args['detailed']:
-        print('stay tuned...')
+        print('')
+        c = next_race['circuit']
+        print(c['description'].strip())
+        print('')
+        print('First Grand Prix: %s' % c['First Grand Prix'])
+        print('Circuit Length: %s' % c['Circuit Length'])
+        print('Race Distance: %s' % c['Race Distance'])
+        print('Lap Record: %s' % c['Lap Record'])
+        print('Number of Laps: %s' % c['Number of Laps'])
+        # for key in next_race['circuit']:
+        #     print(key, next_race['circuit'][key])
 
 
 
