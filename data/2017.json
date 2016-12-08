@@ -2,21 +2,21 @@
 
     {
         "country": "Australian" ,
-        "circult": "Melbourne",
+        "circuit": "Melbourne",
         "position": [ -37.8373, 144.9666],
         "date": [3, 26]
     },
 
     {
         "country": "Chinese",
-        "circult": "Shanghai",
+        "circuit": "Shanghai",
         "position": [ 31.3807, 121.2498],
         "date": [4, 9]
     }, 
 
     {
         "country": "Bahrain",
-        "circult": "Bahrain",
+        "circuit": "Sakhir",
         "position": [ 26.0370, 50.5112],
         "date": [4, 16]
     }, 
@@ -24,119 +24,119 @@
 
     {
         "country": "Russian",
-        "circult": "Sochi",
+        "circuit": "Sochi",
         "position": [ 43.6203, 39.7120],
         "date": [4, 30]
     }, 
 
     {
         "country": "Spanish",
-        "circult": "Barcelona",
+        "circuit": "Catalunya",
         "position": [ 41.5638, 2.2585],
         "date": [5, 14]
     }, 
 
     {
         "country": "Monaco",
-        "circult": "Monte Carlo",
+        "circuit": "Monte Carlo",
         "position": [ 43.7338, 7.4215],
         "date":  [5, 28]
     }, 
 
     {
         "country": "Canadian",
-        "circult": "Montreal",
+        "circuit": "Montreal",
         "position": [ 45.5034, -73.5267],
         "date": [6, 11]
     }, 
 
     {
         "country": "European",
-        "circult": "Baku",
+        "circuit": "Baku",
         "position": [ 40.3699, 49.8433],
         "date": [6, 25]
     }, 
 
     {
         "country": "Austrian",
-        "circult": "Spielberg",
+        "circuit": "Spielberg",
         "position": [ 47.2225, 14.7607],
         "date": [7, 9]
     }, 
 
     {
         "country": "British",
-        "circult": "Silverstone",
+        "circuit": "Silverstone",
         "position": [ 52.0706, -1.0174],
         "date": [7, 16]
     }, 
 
     {
         "country": "Hungarian",
-        "circult": "Budapest",
+        "circuit": "Budapest",
         "position": [ 47.5830, 19.2526],
         "date": [7, 30]
     }, 
 
     {
         "country": "Belgian",
-        "circult": "Spa-Francorchamps",
+        "circuit": "Spa-Francorchamps",
         "position": [ 50.4440, 5.9687],
         "date": [8, 27]
     }, 
 
     {
         "country": "Italian",
-        "circult": "Monza", 
+        "circuit": "Monza", 
         "position": [ 45.6169, 9.2825],
         "date": [9, 3]
     }, 
 
     {
         "country": "Singapore",  
-        "circult": "Singapore",
+        "circuit": "Singapore",
         "position": [ 1.2857, 103.8575],
         "date": [9, 17]
     }, 
 
     {
         "country": "Malaysian",
-        "circult": "Sepang",
+        "circuit": "Kuala Lumpur",
         "position": [ 2.7601, 101.7370],
         "date": [10, 1]
     }, 
 
     {
         "country": "Japanese",
-        "circult": "Suzuka",
+        "circuit": "Suzuka",
         "position": [ 35.3689, 138.9256],
         "date": [10, 8]
     }, 
 
     {
         "country": "United States",
-        "circult": "Austin",
+        "circuit": "Austin",
         "position": [ 30.1328, -97.6411],
         "date": [10, 22]
     }, 
 
     {
         "country": "Mexican",
-        "circult": "Mexico City",
+        "circuit": "Mexico City",
         "position": [ 19.4028, -99.0986],
         "date": [10, 29]
     }, 
 
     {
         "country": "Brazilian",
-        "circult": "Sao Paulo",
+        "circuit": "Sao Paulo",
         "position": [ -23.7014, -46.6969],
         "date": [11, 12]
     }, 
 
     {
         "country": "Abu Dhabi",
-        "circult": "Abu Dhabi",
+        "circuit": "Yas Marina",
         "position": [ 24.4821, 54.3482],
         "date": [11, 26]
     }
