@@ -11,7 +11,7 @@ NOW = datetime.datetime.utcnow()
 TIMELAG = datetime.datetime.now() - NOW
 # UTCNOW = datetime.datetime.utcnow()
 MONTHS = ('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec')
-DATAPATH = os.path.abspath(os.path.join(os.path.realpath(__file__), '../../data/'))
+DATAPATH = os.path.abspath(os.path.join(os.path.realpath(__file__), '../../race_data/'))
 
 
 class NextF1Race(object):
