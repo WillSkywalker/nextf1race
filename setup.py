@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="nextf1race",
-    version="0.1.3",
+    version="0.1.4",
     packages=find_packages(exclude=['tests*']),
 
     package_data={
@@ -50,6 +50,7 @@ setup(
         'Programming Language :: Python :: 3.2',
         'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
-        'Programming Language :: Python :: 3.5',        
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
     ],
 )

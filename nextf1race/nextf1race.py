@@ -44,8 +44,8 @@ class NextF1Race(object):
             next = self.calendar[-1]
             circuit = self.circuits[next['circuit']]
             race_time = list(map(int, circuit['time']['Race'].split(':')))
-        next['gap'] = datetime.datetime(NOW.year+1, race['date'][0], 
-            race['date'][1], race_time[0], race_time[1]) - NOW
+            next['gap'] = datetime.datetime(NOW.year+1, race['date'][0], 
+                race['date'][1], race_time[0], race_time[1]) - NOW
         next['circuit'] = self.circuits[next['circuit']]
         return next
 
